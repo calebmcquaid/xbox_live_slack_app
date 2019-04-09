@@ -105,4 +105,3 @@ module SlackApp
 			end
 			Fortnite.run
 end
-end
