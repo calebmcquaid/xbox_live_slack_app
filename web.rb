@@ -1,9 +1,9 @@
 require 'sinatra/base'
 
-module SlackApp
+module SlackAppbot
   class Web < Sinatra::Base
     get '/' do
-      'Its working!'
+      'Bot is running...'
     end
   end
 end
