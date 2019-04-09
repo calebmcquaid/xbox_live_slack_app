@@ -3,14 +3,14 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'dotenv'
 Dotenv.load
 
-require 'slack-pongbot'
+require 'slack-app'
 require 'web'
 
 Thread.abort_on_exception = true
 
 Thread.new do
   begin
-    PongBot.run
+    SlackApp::Bot.run
   rescue Exception => e
     STDERR.puts "ERROR: #{e}"
     STDERR.puts e.backtrace
@@ -18,4 +18,4 @@ Thread.new do
   end
 end
 
-run PongBot::Web
+run SlackApp::Web
