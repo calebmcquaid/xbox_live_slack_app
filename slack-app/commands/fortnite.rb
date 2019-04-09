@@ -2,7 +2,7 @@ require 'dotenv'
 require 'slack-ruby-bot'
 require 'xbox-api'
 require 'json'
-require 'pry'
+
 
 module SlackApp
 	module Commands
