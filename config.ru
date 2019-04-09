@@ -10,7 +10,7 @@ Thread.abort_on_exception = true
 
 Thread.new do
   begin
-    Pongbot.run
+    PongBot.run
   rescue Exception => e
     STDERR.puts "ERROR: #{e}"
     STDERR.puts e.backtrace
@@ -18,4 +18,4 @@ Thread.new do
   end
 end
 
-run Pongbot::Web
+run PongBot::Web

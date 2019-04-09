@@ -4,7 +4,7 @@ require 'xbox-api'
 require 'json'
 require 'pry'
 
-		class FortniteBot < SlackRubyBot::Commands::Base
+		class PongBot < SlackRubyBot::Commands::Base
 
 			client = XboxApi::Client.new(ENV[:XBOX_API_KEY])
 			drew = XboxApi::Gamer.new("endersname", client, "2535463885818470")
@@ -103,5 +103,5 @@ require 'pry'
 					client.say(channel: data.channel, text: "Alec is #{online["state"]}; #{activity}\nBen is #{online1["state"]}; #{activity1}\nCaleb is #{online2["state"]}; #{activity2}\nDrew is #{online3["state"]}; #{activity3}\nIsaac is #{online4["state"]}; #{activity4}\n")
 				end
 			end
-			Pongbot.run
+			PongBot.run
 			
