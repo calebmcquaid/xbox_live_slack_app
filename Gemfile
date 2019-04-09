@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.5.1'
 
 gem 'slack-ruby-bot'
+gem 'async-websocket'
 gem 'xbox-api'
 gem 'json'
 gem 'dotenv'
