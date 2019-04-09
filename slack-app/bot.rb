@@ -6,7 +6,7 @@ require 'json'
 
 module SlackApp
 	class Bot < SlackRubyBot::Bot
-		client = XboxApi::Client.new(ENV[:XBOX_API_KEY])
+		client = XboxApi::Client.new(ENV[XBOX_API_KEY])
 			drew = XboxApi::Gamer.new("endersname", client, "2535463885818470")
 			alec = XboxApi::Gamer.new("oldswirlybeard", client, "2535409892406807")
 			ben = XboxApi::Gamer.new("RangerBenN", client, "2535424575144632")
