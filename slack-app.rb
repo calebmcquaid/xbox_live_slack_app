@@ -1,7 +1,6 @@
 require 'slack-ruby-bot'
 require 'slack-app/commands'
 require 'slack-app/bot'
-require 'async-websocket'
 require 'xbox-api'
 require 'json'
 require 'dotenv'
