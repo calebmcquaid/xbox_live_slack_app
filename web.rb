@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-module SlackPongbot
+module SlackApp
   class Web < Sinatra::Base
     get '/' do
       'Its working!'
