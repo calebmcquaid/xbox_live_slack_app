@@ -1,0 +1,7 @@
+require 'dotenv'
+require 'slack-ruby-bot'
+require 'slack-pongbot/commands/fortnitebot'
+require 'slack-pongbot/bot'
+require 'xbox-api'
+require 'json'
+require 'pry'
